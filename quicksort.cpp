@@ -15,11 +15,11 @@ int Partition(vector<int> &v, int lb, int ub ){
     swap ( v[lb], v[end]);
     return end ;
 }
-vector<int> QuickSort(vector<int> &v, int lb, int ub ){
+vector<int> quickSort(vector<int> &v, int lb, int ub ){
     if (lb < ub){
         int loc = Partition (v, lb, ub);
-        QuickSort (v, lb, loc - 1);
-        QuickSort (v, loc + 1, ub);
+        quickSort (v, lb, loc - 1);
+        quickSort (v, loc + 1, ub);
     }
     return v ;
 }
@@ -31,7 +31,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>v[i];
     }
-    QuickSort(v,0,v.size()-1);
+    quickSort(v,0,v.size()-1);
     for(int i=0;i<n;i++)cout<<v[i]<<" ";
     cout<<endl;
     return 0;
