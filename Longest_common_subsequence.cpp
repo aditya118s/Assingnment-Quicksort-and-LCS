@@ -60,8 +60,8 @@ int main(){
     string s1,s2;
     cin>>s1>>s2;
     int l1 = s1.length(), l2=s2.length();
-    memset(t,-1,sizeof(t));
-    cout<<LCS(s1,s2,l1,l2)<<endl;
+//     memset(t,-1,sizeof(t));
+//     cout<<LCS(s1,s2,l1,l2)<<endl;
     cout<<print_LCS(s1,s2,l1,l2)<<endl;
     return 0;
 }
